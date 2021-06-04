@@ -15,9 +15,9 @@
         <finalName>itstack-demo-design-11-02</finalName>
         <plugins>
             <plugin>
-                <groupId>com.zenjava</groupId>
+                <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>8.8.3</version>
+                <version>0.0.6</version>
                 <configuration>
                     <mainClass>org.itstack.demo.desgin.Application</mainClass>
                 </configuration>
