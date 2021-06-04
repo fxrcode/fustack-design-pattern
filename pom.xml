@@ -8,6 +8,10 @@
     <artifactId>itstack-demo-design</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+      <maven.compiler.source>11</maven.compiler.source>
+      <maven.compiler.target>11</maven.compiler.target>
+    </properties>
     <modules>
         <module>itstack-demo-design-1-01</module>
         <module>itstack-demo-design-1-00</module>
