@@ -60,5 +60,4 @@ public class ApiTest {
         logger.info("测试结果(拒绝To撤审)：{}", JSON.toJSONString(result));
         logger.info("活动信息：{} 状态：{}", JSON.toJSONString(ActivityService.queryActivityInfo(activityId)), JSON.toJSONString(ActivityService.queryActivityInfo(activityId).getStatus()));
     }
-
 }

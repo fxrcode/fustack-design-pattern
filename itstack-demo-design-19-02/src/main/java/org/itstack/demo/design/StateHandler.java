@@ -1,13 +1,18 @@
 package org.itstack.demo.design;
 
-import org.itstack.demo.design.impl.*;
+//import org.itstack.demo.design.impl.*;
+import org.itstack.demo.design.implIState.*;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class StateHandler {
 
-    private Map<Enum<Status>, State> stateMap = new ConcurrentHashMap<Enum<Status>, State>();
+    /**
+     * Changed to use Interface State, rather abstract class State
+     */
+//    private Map<Enum<Status>, State> stateMap = new ConcurrentHashMap<Enum<Status>, State>();
+    private Map<Enum<Status>, IState> stateMap = new ConcurrentHashMap<>();
 
     public StateHandler() {
         stateMap.put(Status.Check, new CheckState());     // 待审核

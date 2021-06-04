@@ -23,10 +23,10 @@ public class ApiTest {
         ActivityExecStatusController activityExecStatusController = new ActivityExecStatusController();
         Result resultRefuse = activityExecStatusController.execStatus(activityId, Status.Editing, Status.Refuse);
 
-        logger.info("测试结果(编辑中To审核拒绝)：{}", JSON.toJSONString(resultRefuse));
+        logger.info("测试结果(编辑中 -> 审核拒绝)：{}", JSON.toJSONString(resultRefuse));
 
         Result resultCheck = activityExecStatusController.execStatus(activityId, Status.Editing, Status.Check);
-        logger.info("测试结果(编辑中To提交审核)：{}", JSON.toJSONString(resultCheck));
+        logger.info("测试结果(编辑中 -> 提交审核)：{}", JSON.toJSONString(resultCheck));
 
     }
 
